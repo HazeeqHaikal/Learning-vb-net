@@ -23,22 +23,33 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnGo = New System.Windows.Forms.Button()
+        Me.btnVariable = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnGo
         '
-        Me.btnGo.Location = New System.Drawing.Point(251, 109)
+        Me.btnGo.Location = New System.Drawing.Point(62, 52)
         Me.btnGo.Name = "btnGo"
-        Me.btnGo.Size = New System.Drawing.Size(312, 201)
+        Me.btnGo.Size = New System.Drawing.Size(198, 112)
         Me.btnGo.TabIndex = 0
         Me.btnGo.Text = "Go"
         Me.btnGo.UseVisualStyleBackColor = True
+        '
+        'btnVariable
+        '
+        Me.btnVariable.Location = New System.Drawing.Point(422, 52)
+        Me.btnVariable.Name = "btnVariable"
+        Me.btnVariable.Size = New System.Drawing.Size(219, 112)
+        Me.btnVariable.TabIndex = 1
+        Me.btnVariable.Text = "Variable"
+        Me.btnVariable.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnVariable)
         Me.Controls.Add(Me.btnGo)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -47,4 +58,5 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents btnGo As Button
+    Friend WithEvents btnVariable As Button
 End Class
