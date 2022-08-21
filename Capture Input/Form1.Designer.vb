@@ -29,6 +29,8 @@ Partial Class Form1
         Me.txtLastName = New System.Windows.Forms.TextBox()
         Me.txtGender = New System.Windows.Forms.TextBox()
         Me.gender = New System.Windows.Forms.Label()
+        Me.lstOccupation = New System.Windows.Forms.ListBox()
+        Me.occupation = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'submitBtn
@@ -88,11 +90,32 @@ Partial Class Form1
         Me.gender.TabIndex = 6
         Me.gender.Text = "Gender"
         '
+        'lstOccupation
+        '
+        Me.lstOccupation.FormattingEnabled = True
+        Me.lstOccupation.ItemHeight = 16
+        Me.lstOccupation.Items.AddRange(New Object() {"Teacher", "Doctor", "Programmer", "Accountant", "Software Developer", "Engineer", "Architect", "Soldier"})
+        Me.lstOccupation.Location = New System.Drawing.Point(626, 112)
+        Me.lstOccupation.Name = "lstOccupation"
+        Me.lstOccupation.Size = New System.Drawing.Size(140, 196)
+        Me.lstOccupation.TabIndex = 7
+        '
+        'occupation
+        '
+        Me.occupation.AutoSize = True
+        Me.occupation.Location = New System.Drawing.Point(654, 77)
+        Me.occupation.Name = "occupation"
+        Me.occupation.Size = New System.Drawing.Size(75, 16)
+        Me.occupation.TabIndex = 8
+        Me.occupation.Text = "Occupation"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.occupation)
+        Me.Controls.Add(Me.lstOccupation)
         Me.Controls.Add(Me.gender)
         Me.Controls.Add(Me.txtGender)
         Me.Controls.Add(Me.lastName)
@@ -114,4 +137,6 @@ Partial Class Form1
     Friend WithEvents txtLastName As TextBox
     Friend WithEvents txtGender As TextBox
     Friend WithEvents gender As Label
+    Friend WithEvents lstOccupation As ListBox
+    Friend WithEvents occupation As Label
 End Class
