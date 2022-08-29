@@ -22,45 +22,33 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnGrade = New System.Windows.Forms.Button()
-        Me.txtGrade = New System.Windows.Forms.TextBox()
-        Me.lblGrade = New System.Windows.Forms.Label()
+        Me.txtTemperature = New System.Windows.Forms.TextBox()
+        Me.btnCheckTemp = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'btnGrade
+        'txtTemperature
         '
-        Me.btnGrade.Location = New System.Drawing.Point(418, 231)
-        Me.btnGrade.Name = "btnGrade"
-        Me.btnGrade.Size = New System.Drawing.Size(95, 35)
-        Me.btnGrade.TabIndex = 0
-        Me.btnGrade.Text = "Get Grade"
-        Me.btnGrade.UseVisualStyleBackColor = True
+        Me.txtTemperature.Location = New System.Drawing.Point(258, 116)
+        Me.txtTemperature.Name = "txtTemperature"
+        Me.txtTemperature.Size = New System.Drawing.Size(242, 22)
+        Me.txtTemperature.TabIndex = 0
         '
-        'txtGrade
+        'btnCheckTemp
         '
-        Me.txtGrade.Location = New System.Drawing.Point(331, 192)
-        Me.txtGrade.MaxLength = 3
-        Me.txtGrade.Name = "txtGrade"
-        Me.txtGrade.Size = New System.Drawing.Size(182, 22)
-        Me.txtGrade.TabIndex = 1
-        '
-        'lblGrade
-        '
-        Me.lblGrade.AutoSize = True
-        Me.lblGrade.Location = New System.Drawing.Point(136, 195)
-        Me.lblGrade.Name = "lblGrade"
-        Me.lblGrade.Size = New System.Drawing.Size(171, 16)
-        Me.lblGrade.TabIndex = 2
-        Me.lblGrade.Text = "Enter the examination score"
+        Me.btnCheckTemp.Location = New System.Drawing.Point(359, 154)
+        Me.btnCheckTemp.Name = "btnCheckTemp"
+        Me.btnCheckTemp.Size = New System.Drawing.Size(140, 40)
+        Me.btnCheckTemp.TabIndex = 1
+        Me.btnCheckTemp.Text = "Check Temperature"
+        Me.btnCheckTemp.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.lblGrade)
-        Me.Controls.Add(Me.txtGrade)
-        Me.Controls.Add(Me.btnGrade)
+        Me.Controls.Add(Me.btnCheckTemp)
+        Me.Controls.Add(Me.txtTemperature)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -68,7 +56,6 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents btnGrade As Button
-    Friend WithEvents txtGrade As TextBox
-    Friend WithEvents lblGrade As Label
+    Friend WithEvents txtTemperature As TextBox
+    Friend WithEvents btnCheckTemp As Button
 End Class

@@ -21,9 +21,20 @@
             MessageBox.Show("You have failed the examination")
         End If
 
-
+        If score >= 90 Then
+            MessageBox.Show("GRADE A")
+        ElseIf score >= 70 And score < 90 Then
+            MessageBox.Show("GRADE B")
+        ElseIf score >= 50 And score < 70 Then
+            MessageBox.Show("GRADE C")
+        ElseIf score >= 40 And score < 50 Then
+            MessageBox.Show("GRADE D")
+        Else
+            MessageBox.Show("GRADE E")
+        End If
 
         MessageBox.Show("All done")
 
     End Sub
+
 End Class
