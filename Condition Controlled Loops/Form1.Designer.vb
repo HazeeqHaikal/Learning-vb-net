@@ -31,7 +31,7 @@ Partial Class Form1
         Me.btnInput.Name = "btnInput"
         Me.btnInput.Size = New System.Drawing.Size(455, 203)
         Me.btnInput.TabIndex = 0
-        Me.btnInput.Text = "Enter a name"
+        Me.btnInput.Text = "Enter an age"
         Me.btnInput.UseVisualStyleBackColor = True
         '
         'Form1

@@ -1,15 +1,17 @@
 ﻿Public Class Form1
     Private Sub btnInput_Click(sender As Object, e As EventArgs) Handles btnInput.Click
 
-        Dim name As String
+        Dim age As String
+        Dim numAge As Integer
 
-        Do While True
-            name = InputBox("Please enter your name")
-            If name = "hazeeq" Then
-                MessageBox.Show("Hi " & name)
-                Exit Do
-            End If
+        Do While Not IsNumeric(age)
+            age = InputBox("Please enter your age in years")
         Loop
+
+        numAge = CInt(age)
+
+        MessageBox.Show("Hello you are " & numAge & " years old")
+
 
     End Sub
 End Class
