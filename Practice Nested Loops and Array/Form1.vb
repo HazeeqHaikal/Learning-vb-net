@@ -164,22 +164,31 @@
 
         Dim condition As Boolean
         Dim search As String
+        Dim coordinateX As Integer
 
         condition = False
         search = InputBox("What do you want to search?")
 
-        For i = 0 To people.GetLength(0) - 1
-            For x = 0 To people.GetLength(1) - 1
-                If people(i, x).ToUpper = search.ToUpper Then
+        For x = 0 To people.GetLength(0) - 1
+            For y = 0 To people.GetLength(1) - 1
+                If people(x, y).ToUpper = search.ToUpper Then
                     condition = True
+                    coordinateX = x
                     Exit For
                     Exit For
                 End If
             Next
         Next
 
+        Dim joinedString As String
+
         If condition = True Then
-            MessageBox.Show("Data found")
+            For x = coordinateX To coordinateX
+                For y = 0 To people.GetLength(1) - 1
+                    joinedString = joinedString & people(x, y) & vbNewLine
+                Next
+            Next
+            MessageBox.Show(joinedString)
         Else
             MessageBox.Show("Data is not found")
         End If
